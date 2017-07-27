@@ -1,6 +1,6 @@
-#Super Computo
+Super Computo
 
-###Estado 
+####Estado 
 
 ```
 Tareas = 
