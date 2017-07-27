@@ -1,3 +1,7 @@
 # Super Computo
- #### Estado:
-'''' Se ejecutaron 235 procesos ''''
+
+#### Estado:
+```
+ Se ejecutaron 235 procesos
+  
+```
