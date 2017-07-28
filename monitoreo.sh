@@ -6,4 +6,5 @@ echo -e "# Super Computo\n####Estado:\n\n~~~~~\nSe ejecutaron $PROCESOS procesos
 
 git add *
 git commit -m "creación y modificacion"
+git remote add origin git@github.com:SkyllerXBruce/user.git
 git push -u origin master
