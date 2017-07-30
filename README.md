@@ -1,7 +1,6 @@
 # Super Computo
+####Estado:
 
-#### Estado:
-```
- Se ejecutaron 235 procesos
-  
-```
+~~~~~
+Procesos en ejecución 249
+~~~~~
