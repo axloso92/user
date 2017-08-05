@@ -2,5 +2,5 @@
 #### Estado:
 
 ~~~~~
-Procesos en ejecución 227
+Procesos en ejecución 226
 ~~~~~
