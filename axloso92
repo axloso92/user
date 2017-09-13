@@ -140,8 +140,6 @@ libblkid-devel
 libbonobo-devel
 libcap-devel
 libdrm-devel
-libevent-devel
-libevent2-devel.x86_64
 libibcommon-devel
 libgcrypt-devel
 libglade2-devel
