@@ -4,8 +4,6 @@ firewall --disabled
 selinux --disabled
 skipx
 firstboot --disable
-#repo --name=kernel --baseurl=http://mirrors.kernel.org/centos/6.9/os/x86_64
-
 
 lang en_US.UTF-8 
 #lang es_ES.UTF-8  # modificacion
@@ -17,25 +15,11 @@ rootpw  JirafaIntensa.23! # modificacion
 authconfig --enableshadow --passalgo=sha512
 timezone --utc America/Mexico_City
 
-bootloader --location=mbr --append="LXnode intel_idle.max_cstate=0 processor.max_cstate=1 elevator=deadline rdblacklist=nouveau nouveau.modeset=0 console=tty0  console=ttyS1,115200"
-
 services --disabled opensmd,ibacm,openibd,abrt-ccpp,abrt-oops,avahi-daemon,certmonger,cups,jexec,kdump,irqbalance,iptables,ip6tables,postfix,abrtd,libvirt-guests,portreserve,nvidia,lustre,lnet,libvirtd,hypervkvpd,bluetooth,bmc-watchdog,cachefilesd,openct,pcscd,cpuspeed,bluetooth,iscsi,iscsid,ksm,ksmtuned,ipmidetectd,shellinaboxd
 
 services --enabled rsh,rlogin,ntpd,ipmi,rdma,cpuspeed
 
-reboot
-
-#poweroff
 unsupported_hardware
-
-network --device=eth0 --onboot=yes --bootproto=static --ip=10.10.101.200 --netmask=255.255.255.0 --hostname=web.supercomputo.izt.uam.mx --nameserver=148.206.32.29 --gateway=148.206.50.251
-
-#zerombr
-#clearpart --all --initlabel
-#part / --fstype=ext4 --size=200000  --ondisk=sdb
-#part /var --fstype=ext4 --size=400000  --ondisk=sdb
-#part swap --fstype=swap --size=16384  --ondisk=sdb # modificado de 8192 a 4096
-#part /home--fstype=ext4 --size=80 --grow --ondisk=sdb
 
 %packages --ignoremissing
 @ backup-server
